@@ -1,4 +1,4 @@
-# Car rental system.
+# Car Rental System
 
 ### - Create a brand new project. Its name will be CarRental.
 
