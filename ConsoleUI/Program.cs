@@ -2,8 +2,8 @@
 using Business.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 
@@ -13,13 +13,44 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            ICarService carManager = new CarManager(new EfCarDal());
+            CarTest();
+            // ColorTest();
+            // BrandTest();
+        }
 
-            List<Car> cars = carManager.GetAll();
+        private static void BrandTest()
+        {
+            BrandManager brandManager = new BrandManager(new EfBrandDal());
 
-            foreach (Car car in cars)
+            List<Brand> brands = brandManager.GetAll();
+
+            foreach (Brand brand in brands)
             {
-                Console.WriteLine(car.CarDescription);
+                Console.WriteLine(brand.BrandName);
+            }
+        }
+
+        private static void ColorTest()
+        {
+            ColorManager colorManager = new ColorManager(new EfColorDal());
+
+            List<Color> colors = colorManager.GetAll();
+
+            foreach (Color color in colors)
+            {
+                Console.WriteLine(color.ColorName);
+            }
+        }
+
+        private static void CarTest()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
+
+            List<CarDetailDto> cars = carManager.GetCarDetails();
+
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car.CarDescription + " / " + car.BrandName + " / " + car.ColorName + " / " + car.DailyPrice);
             }
         }
     }

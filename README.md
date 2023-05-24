@@ -32,3 +32,24 @@
     - Car name must be a minimum of 2 characters
 
     - The car daily price must be greater than 0.
+
+## STAGE 3
+
+### - Create a Core layer in your CarRental Project.
+
+### - Create and add your IEntity, IDto, IEntityRepository, EfEntityRepositoryBase files as in the 9th day lesson.
+
+### - Prepare all CRUD operations for your Car, Brand, Color classes.
+
+### - Test all your CRUD operations for Car, Brand, Model objects in Console. GetAll, GetById, Insert, Update, Delete.
+
+### - List the cars with the following information. CarName, BrandName, ColorName, DailyPrice. (Hint: Create IDto and write join to 3 tables)
+
+
+
+
+
+
+
+
+
