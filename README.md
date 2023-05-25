@@ -1,6 +1,8 @@
 # CAR RENTAL SYSTEM
 
+
 ## STAGE 1
+
 
 ### - Create a brand new project. Its name will be CarRental.
 
@@ -14,7 +16,9 @@
 
 ### - Test it in console.
 
+
 ## STAGE 2
+
 
 ### - Add Brand and Color objects (Entity)
     Brand-->Id,Name 
@@ -33,7 +37,9 @@
 
     - The car daily price must be greater than 0.
 
+
 ## STAGE 3
+
 
 ### - Create a Core layer in your CarRental Project.
 
@@ -46,10 +52,27 @@
 ### - List the cars with the following information. CarName, BrandName, ColorName, DailyPrice. (Hint: Create IDto and write join to 3 tables)
 
 
+## STAGE 4
 
 
+### - Configure Results in the Core layer.
 
+### - Refactor (improve the code) all the Business classes you have developed before, according to this structure.
 
+### - Create the users table. Users-->Id,FirstName,LastName,Email,Password
 
+### - Create the customers table. Customers-->UserId,CompanyName
 
+### - Users and customers are related.
 
+### - Create a table holding the rental information of the car. Rentals-->Id, CarId, CustomerId, RentDate(HireDate), ReturnDate(Delivery Date). ReturnDate is null if the car is not delivered.
+
+### - Create these entities in your project.
+
+### - Write the CRUD operations.
+
+### - Add new customers.
+
+### - Code the possibility of renting the car. Rental-->Add
+
+### - In order for the car to be rented, the car must be delivered.
