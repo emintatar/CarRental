@@ -76,3 +76,13 @@
 ### - Code the possibility of renting the car. Rental-->Add
 
 ### - In order for the car to be rented, the car must be delivered.
+
+
+## STAGE 5
+
+
+### - Create the WebAPI layer.
+
+### - Write the Api equivalent of all services in the Business layer.
+
+### - Test in Postman.
